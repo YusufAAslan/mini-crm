@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "07db7426-b02d-4181-8b80-c4480e924828",
+		"name": "Mini CRM API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36587394"
+	},
+	"item": [
+		{
+			"name": "List Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Retrieves a list of all employees / Tüm çalışanların listesi getir"
+			},
+			"response": []
+		},
+		{
+			"name": "List Tasks for an Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Retrieves all tasks assigned to a specific employee/ belli bi calisanin tum gorevleri getir"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a New Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\": 1,\r\n    \"title\": \"Complete report\",\r\n    \"status\": \"pending\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Creates a new task for an employee/ yeni gorev olustur"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Update project report\",\r\n  \"status\": \"in_progress\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/tasks/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"{id}"
+					]
+				},
+				"description": "Updates the title or status of a specific task/ Belirli bir görevin başlığını veya durumunu günceller."
+			},
+			"response": []
+		},
+		{
+			"name": "Mark Task as Complete",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/tasks/{id}/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"{id}",
+						"complete"
+					]
+				},
+				"description": "Marks the task as completed by updating its status / Görevi durumunu güncelleyerek tamamlanmış olarak işaretler"
+			},
+			"response": []
+		}
+	]
+}
