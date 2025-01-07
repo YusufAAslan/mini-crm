@@ -1,26 +1,29 @@
-<!-- # Mini CRM API -->
+## <!--  Mini CRM API -->
 
 Mini CRM is a Laravel-based project designed to manage employees and their tasks using PostgreSQL. It allows you to create, update, and retrieve employees and tasks through RESTful API endpoints.
+## VIA
+## Laravel Framework 11.37.0
+## PHP 8.2.12
 
-<!-- ## Features -->
-- List all employees
-- List tasks assigned to a specific employee
-- Create a new task
-- Update a task's title or status
-- Mark a task as completed
+## <!-- Features -->
+   - List all employees
+   - List tasks assigned to a specific employee
+   - Create a new task
+   - Update a task's title or status
+   - Mark a task as completed
 
----
+-------------------------------------------------------
 
-<!-- ## Setup Instructions -->
+## <!-- Setup Instructions -->
 
-<!-- Prerequisites -->
-- PHP 8.1 or later
-- Composer
-- PostgreSQL
-- Postman (optional, for testing)
+## <!-- Prerequisites -->
+   - PHP 8.1 or later
+   - Composer
+   - PostgreSQL
+   - Postman (optional, for testing)
 
 
-<!-- ** Installation -->
+## <!-- Installation -->
 1. Clone the repository:
    ```bash
    git clone <repository-url>
@@ -29,23 +32,24 @@ Mini CRM is a Laravel-based project designed to manage employees and their tasks
 composer install
 
 3. Configure the .env file:
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=5432
-DB_DATABASE=mini_crm
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+   
+   DB_CONNECTION=pgsql
+   DB_HOST=127.0.0.1
+   DB_PORT=5432
+   DB_DATABASE=mini_crm
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
 
-4. Run migrations and seeders:
-php artisan migrate --seed
+5. Run migrations and seeders:
+   php artisan migrate --seed
 
-5. php artisan serve
+6. php artisan serve
 
-6. Your API will be accessible at:
+7. Your API will be accessible at:
 http://127.0.0.1:8000/api
 
 
-Postman Collection:
+## Postman Collection:
 
 
 Importing the Collection
@@ -90,7 +94,7 @@ Response:
         "status": "pending",
         "created_at": "2025-01-07T22:51:44.000000Z",
         "updated_at": "2025-01-07T22:51:44.000000Z"
-    }
+   }
 ]
 
 
