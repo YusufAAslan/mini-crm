@@ -1,11 +1,11 @@
-## <!--  Mini CRM API -->
+##  Mini CRM API 
 
 Mini CRM is a Laravel-based project designed to manage employees and their tasks using PostgreSQL. It allows you to create, update, and retrieve employees and tasks through RESTful API endpoints.
 ## VIA
 ## Laravel Framework 11.37.0
 ## PHP 8.2.12
 
-## <!-- Features -->
+##  Features 
    - List all employees
    - List tasks assigned to a specific employee
    - Create a new task
@@ -13,7 +13,7 @@ Mini CRM is a Laravel-based project designed to manage employees and their tasks
    - Mark a task as completed
 
 
-## <!-- Table of Contents -->
+## Table of Contents 
 - Project Description
 - Setup Instructions
 - API Endpoints
@@ -22,16 +22,16 @@ Mini CRM is a Laravel-based project designed to manage employees and their tasks
 
 -------------------------------------------------------
 
-## <!-- Setup Instructions -->
+## Setup Instructions 
 
-## <!-- Prerequisites -->
+##  Prerequisites 
    - PHP 8.1 or later
    - Composer
    - PostgreSQL
    - Postman (optional, for testing)
 
 
-## <!-- Installation -->
+## Installation 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
