@@ -1,4 +1,4 @@
-##  Mini CRM API 
+##  Mini CRM 
 
 Mini CRM is a Laravel-based project designed to manage employees and their tasks using PostgreSQL. It allows you to create, update, and retrieve employees and tasks through RESTful API endpoints.
 ## VIA
