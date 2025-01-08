@@ -12,6 +12,14 @@ Mini CRM is a Laravel-based project designed to manage employees and their tasks
    - Update a task's title or status
    - Mark a task as completed
 
+
+## <!-- Table of Contents -->
+- Project Description
+- Setup Instructions
+- API Endpoints
+- Postman Collection
+- Screenshots 
+
 -------------------------------------------------------
 
 ## <!-- Setup Instructions -->
